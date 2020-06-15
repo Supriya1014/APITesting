@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="09691375-a303-487a-aa4a-ae9fba0c3e7f" activeEnvironment="Default environment" name="REST Project 1" soapui-version="5.5.0" encryptionMode="Not encrypted" updated="3.2.7 2020-05-27T19:48:04Z" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="b660f0cb-9e9f-43d2-9ad1-eef4fd2cec7f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.openweathermap.org" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://api.openweathermap.org</con:endpoint></con:endpoints><con:resource name="Timemachine" path="/data/2.5/onecall/timemachine" id="a88c66c8-921b-4513-b6b0-c5beb93b2340"><con:settings/><con:parameters><con:parameter><con:name>lat</con:name><con:value>60.99</con:value><con:style>QUERY</con:style><con:default>60.99</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>lon</con:name><con:value>30.9</con:value><con:style>QUERY</con:style><con:default>30.9</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>dt</con:name><con:value>1591767539</con:value><con:style>QUERY</con:style><con:default>1591767539</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>appid</con:name><con:value>d06eb75db2fbf9c8c04fb35b07c7967f</con:value><con:style>QUERY</con:style><con:default>d06eb75db2fbf9c8c04fb35b07c7967f</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Timemachine 1" id="1e2e91b1-8d27-4bc4-8e57-e3e98b3f10ab" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="e128fd0f-b647-4a55-b8ad-b585676a8bd2" mediaType="application/json"><con:settings/><con:endpoint>http://api.openweathermap.org</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="dt" value="1591767539"/>
+  <con:entry key="appid" value="d06eb75db2fbf9c8c04fb35b07c7967f"/>
+  <con:entry key="lon" value="30.9"/>
+  <con:entry key="lat" value="60.99"/>
+</con:parameters><con:parameterOrder><con:entry>lat</con:entry><con:entry>lon</con:entry><con:entry>dt</con:entry><con:entry>appid</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="8ee7dcc6-0de3-48d4-9dc7-c816ed7d6745" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a7531914-ce96-444e-95e5-a8742300a66d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="groovy" name="addition" id="ab215d79-4378-4ce4-bde5-b6e119d899a1"><con:settings/><con:config><script>def a = 10
+
+def b = 10
+
+log.info " sum = " +(a+b)</script></con:config></con:testStep><con:testStep type="groovy" name="For and while loop" id="dc3ce431-829c-4c56-bac6-ac4621a5bafa"><con:settings/><con:config><script>
+for(i=0; i&lt;=5; i++)
+	log.info " i = " +i;
+i=10
+while(i&lt;15)
+{
+log.info " i = " +i	
+i++
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Array" id="3e0fbda9-2f37-43de-964c-b4071262c6a4"><con:settings/><con:config><script>def arr = [10, 20, 30, 40, 50]
+
+def i = 0;
+for(i=0; i&lt;5; i++)
+
+	log.info arr[i];
+	 </script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:authRepository/><con:tags/></con:soapui-project>
